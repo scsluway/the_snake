@@ -180,7 +180,6 @@ class Snake(GameObject):
         Сбрасывает змейку в начальное состояние
         после столкновения с собой.
         """
-        screen.fill(BOARD_BACKGROUND_COLOR)
         self.length = 1  # Длина змейки.
 
         # Список, содержащий позиции всех сегментов тела змейки.
@@ -235,6 +234,7 @@ def main():
             snake.length += 1
         if snake.get_head_position() in snake.positions[2:]:
             snake.reset()  # Проверяем на столкновение змейки с собой.
+            screen.fill(BOARD_BACKGROUND_COLOR)
         # Обновляет игровое поле на экране пользователя.
         pg.display.update()
 

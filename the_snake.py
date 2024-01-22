@@ -157,7 +157,7 @@ class Snake(GameObject):
         Сбрасывает змейку в начальное состояние
         после столкновения с собой.
         """
-        self.length = 1 
+        self.length = 1
         self.positions = [self.position]
         self.direction = RIGHT
         self.next_direction = None

@@ -48,7 +48,7 @@ class GameObject:
     """Базовый класс для инициализации и наследования игровых объектов."""
 
     def __init__(self, body_color=BORDER_COLOR):
-        self.position = [POSITION]
+        self.position = POSITION
         self.body_color = body_color
 
     def draw_a_cell(self, position, body_color=APPLE_COLOR):
